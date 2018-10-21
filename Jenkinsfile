@@ -15,7 +15,6 @@ pipeline {
             steps {
                 sh "whoami"
                 sh "docker run -p 8181:8080 tomcatwebapp:${env.BUILD_ID}"
-                # docker run -p 8181:8080 tomcatwebapp:8
             }
         }
     }
